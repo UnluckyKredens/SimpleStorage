@@ -1,0 +1,35 @@
+.container {
+  // height: 100%;
+  width: 100%;
+  height: 5%;
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  margin-bottom: 1%;
+  .left {
+    margin-left: 1%;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+  }
+}
+.drawer {
+  position: inherit;
+  height: 100%;
+}
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1%;
+  text-align: center;
+  width: 100%;
+  width: 10%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}

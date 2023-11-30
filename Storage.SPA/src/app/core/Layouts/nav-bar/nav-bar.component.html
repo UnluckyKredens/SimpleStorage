@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="left">
+    <div class="example-sidenav-content">
+      <button type="button" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-hidden="false" aria-label="menu" fontIcon="menu"></mat-icon>
+      </button>
+    </div>
+   </div>
+  <div class="right">
+    <button mat-button onclick="window.location.href = '/'">Main Storage</button>
+    <button mat-button onclick="window.location.href = '/add'">Add</button>
+    <button mat-button>{{username}}</button>
+  </div>
+  <mat-drawer-container class="drawer" autosize>
+    <mat-drawer #drawer class="sidenav" mode="over">
+      <a href="/">Storage</a>
+    </mat-drawer>
+  </mat-drawer-container>
+</div>
+
+

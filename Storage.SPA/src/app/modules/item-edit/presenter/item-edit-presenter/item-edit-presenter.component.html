@@ -1,0 +1,45 @@
+<div class="container" *ngIf="isLoaded">
+    <form class="item" ngfor>
+      <div class="item__value">
+        <p>Id</p>
+        <mat-form-field appearance="fill" class="">
+          <mat-label>{{item.id}}</mat-label>
+          <input matInput placeholder="{{item.id}}">
+        </mat-form-field>
+      </div>
+      <div class="item__value">
+        <p>Name</p>
+        <mat-form-field appearance="fill" class="">
+          <mat-label>{{item.name}}</mat-label>
+          <input matInput placeholder="{{item.name}}">
+        </mat-form-field>
+      </div>
+      <div class="item__value">
+        <p>Type</p>
+        <mat-form-field appearance="fill" class="">
+          <mat-label>{{item.type}}</mat-label>
+          <input matInput placeholder="{{item.type}}">
+        </mat-form-field>
+      </div>
+      <div class="item__value">
+        <p>amount</p>
+        <mat-form-field appearance="fill" class="">
+          <mat-label>{{item.amount}}</mat-label>
+          <input matInput placeholder="{{item.amount}}">
+        </mat-form-field>
+      </div>
+      <div class="item__value">
+        <p>Value</p>
+        <mat-form-field appearance="fill" class="">
+          <mat-label>{{item.value}}</mat-label>
+          <input matInput placeholder="{{item.value}}">
+        </mat-form-field>
+      </div>
+      <div>
+      <button mat-button>Save</button>
+      </div>
+    </form>
+</div>
+<div *ngIf="!isLoaded">
+  <h1>Cannot get data from api</h1>
+</div>

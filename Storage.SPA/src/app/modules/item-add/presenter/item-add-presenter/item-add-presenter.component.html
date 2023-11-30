@@ -1,0 +1,42 @@
+<div class="container">
+  <form class="item" [formGroup]="addItemForm">
+    <div class="item__value">
+      <p>Id</p>
+      <mat-form-field appearance="fill" class="">
+        <mat-label>{{id}}</mat-label>
+        <input matInput placeholder="" disabled>
+      </mat-form-field>
+    </div>
+    <div class="item__value">
+      <p>Name</p>
+      <mat-form-field appearance="fill" class="">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="" formControlName="name">
+      </mat-form-field>
+    </div>
+    <div class="item__value">
+      <p>Type</p>
+      <mat-form-field appearance="fill" class="">
+        <mat-label>Type</mat-label>
+        <input matInput placeholder="" formControlName="type">
+      </mat-form-field>
+    </div>
+    <div class="item__value">
+      <p>amount</p>
+      <mat-form-field appearance="fill" class="">
+        <mat-label>amount</mat-label>
+        <input matInput placeholder="" formControlName="amount">
+      </mat-form-field>
+    </div>
+    <div class="item__value">
+      <p>Value</p>
+      <mat-form-field appearance="fill" class="">
+        <mat-label>Value</mat-label>
+        <input matInput placeholder="" formControlName="value">
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-button (click)="addItem()">Save</button>
+    </div>
+  </form>
+</div>
